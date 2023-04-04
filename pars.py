@@ -26,6 +26,6 @@ with open(filename, "r") as file:
             print(f"Директория '{dir_to_check}' есть на сайте '{site}'")
             
             # Сохраняем информацию о сайте в файл
-            with open('rasparssite.txt', 'a') as output_file:
+            with open('sitesthatyouspars.txt', 'a') as output_file:
                 output_file.write(f"{url_to_check}: {response.status_code}\n")
                 output_file.write(f"{site}\n")
